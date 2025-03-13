@@ -1,0 +1,42 @@
+{
+  "class_name": "barrier",
+  "icon": "shield",
+  "attributes": {
+    "max_health": 24,
+    "movement_speed": 0.105,
+    "knockback_resistance": 0.12,
+    "armor": 14
+  },
+  "pickaxe_tool": "diamond_pickaxe",
+  "axe_tool": "iron_axe",
+  "armor": [
+    "netherite_helmet",
+    "diamond_chestplate",
+    "leather_leggings",
+    "iron_boots"
+  ],
+  "items": [
+    "destroy_the_monument:mining_tool",
+    {
+      "id": "shield",
+      "Count": 1,
+      "enchantments": {
+        "sharpness": 2
+      }
+    }
+  ],
+  "restockable_items": [
+    {
+      "item": "cooked_beef",
+      "restock_time": 800,
+      "max_count": 6,
+      "start_count": 4
+    },
+    {
+      "item": "destroy_the_monument:multi_block",
+      "restock_time": 60,
+      "max_count": 32,
+      "start_count": 24
+    }
+  ]
+}

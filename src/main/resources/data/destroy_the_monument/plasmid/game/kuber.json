@@ -37,7 +37,10 @@
     "destroy_the_monument:archer",
     "destroy_the_monument:constructor",
     "destroy_the_monument:tank",
-    "destroy_the_monument:berserker"
+    "destroy_the_monument:berserker",
+    "destroy_the_monument:sentry",
+    "destroy_the_monument:barrier",
+    "destroy_the_monument:sniper"
   ],
 
   "custom": {

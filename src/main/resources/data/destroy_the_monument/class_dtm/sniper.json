@@ -1,0 +1,47 @@
+{
+  "class_name": "sniper",
+  "icon": "skeleton_skull",
+  "attributes": {
+    "armor": 0,
+    "movement_speed": 0.11
+  },
+  "armor": [
+    "oak_leaves",
+    "leather_chestplate",
+    "leather_leggings",
+    "leather_boots"
+  ],
+  "items": [
+    "destroy_the_monument:mining_tool",
+    "stone_sword",
+    {
+      "id": "bow",
+      "count": 1,
+      "components": {
+        "enchantments": {
+          "power": 5
+        }
+      }
+    }
+  ],
+  "restockable_items": [
+    {
+      "item": "cooked_chicken",
+      "restock_time": 800,
+      "max_count": 5,
+      "start_count": 3
+    },
+    {
+      "item": "destroy_the_monument:multi_block",
+      "restock_time": 60,
+      "max_count": 32,
+      "start_count": 24
+    },
+    {
+      "item": "arrow",
+      "restock_time": 400,
+      "max_count": 5,
+      "start_count": 1
+    }
+  ]
+}

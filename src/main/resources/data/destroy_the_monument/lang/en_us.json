@@ -10,6 +10,12 @@
   "class.destroy_the_monument.constructor.description": "Knows how do build and destroy...",
   "class.destroy_the_monument.berserker": "Berserker",
   "class.destroy_the_monument.berserker.description": "High damage, minimal armor",
+  "class.destroy_the_monument.sentry": "Sentry",
+  "class.destroy_the_monument.sentry.description": "Deals with crowds at a range, not close",
+  "class.destroy_the_monument.barrier": "Barrier",
+  "class.destroy_the_monument.barrier.description": "The Wall",
+  "class.destroy_the_monument.sniper": "Sniper",
+  "class.destroy_the_monument.sniper.description": "Snipin's a good job, mate!",
 
   "item.destroy_the_monument.class_selector": "Select class",
   "item.destroy_the_monument.multi_block": "Multi Block",
