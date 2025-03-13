@@ -2,6 +2,7 @@
   "class_name": "sentry",
   "icon": "crossbow",
   "attributes": {
+    "max_health": 20,
     "armor": 8,
     "movement_speed": 0.11
   },

@@ -5,7 +5,8 @@
     "max_health": 24,
     "movement_speed": 0.105,
     "knockback_resistance": 0.12,
-    "armor": 14
+    "armor": 14,
+    "attack_damage ": 4
   },
   "pickaxe_tool": "diamond_pickaxe",
   "axe_tool": "iron_axe",

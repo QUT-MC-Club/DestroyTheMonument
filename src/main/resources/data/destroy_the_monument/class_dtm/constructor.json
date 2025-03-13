@@ -2,6 +2,7 @@
   "class_name": "constructor",
   "icon": "oak_planks",
   "attributes": {
+    "max_health": 20,
     "armor": 7,
     "movement_speed": 0.11
   },

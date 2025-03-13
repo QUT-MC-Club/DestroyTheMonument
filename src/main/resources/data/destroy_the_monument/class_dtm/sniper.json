@@ -2,6 +2,7 @@
   "class_name": "sniper",
   "icon": "skeleton_skull",
   "attributes": {
+    "max_health": 10,
     "armor": 0,
     "movement_speed": 0.11
   },
