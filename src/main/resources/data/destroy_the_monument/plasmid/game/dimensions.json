@@ -42,7 +42,6 @@
 ],
   "kits": [
     "destroy_the_monument:warrior",
-    "destroy_the_monument:sentry",
     "destroy_the_monument:archer",
     "destroy_the_monument:constructor",
     "destroy_the_monument:tank",

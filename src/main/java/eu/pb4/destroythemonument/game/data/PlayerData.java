@@ -22,7 +22,7 @@ public class PlayerData {
 
     public ServerPlayerEntity lastAttacker;
     public long lastAttackTime;
-    public Block selectedBlock = Blocks.STONE;
+    public Block selectedBlock = Blocks.OAK_PLANKS;
     public Sidebar sidebar;
     public BlockPos nextSpawnPos;
 
