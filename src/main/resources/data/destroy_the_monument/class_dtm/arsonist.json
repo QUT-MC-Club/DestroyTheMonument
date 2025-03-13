@@ -15,11 +15,12 @@
   "items": [
     "destroy_the_monument:mining_tool",
     {
-      "id": "iron_sword",
+      "id": "gold_sword",
       "count": 1,
       "components": {
         "enchantments": {
-          "fire_aspect": 2
+          "fire_aspect": 2,
+          "sharpness": 3
         }
       }
     }
