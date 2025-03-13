@@ -5,7 +5,7 @@
   "class.destroy_the_monument.archer": "Archer",
   "class.destroy_the_monument.archer.description": "Ideal for long range combat. Also fast",
   "class.destroy_the_monument.tank": "Tank",
-  "class.destroy_the_monument.tank.description": "Can take many hits, but deals smaller damage",
+  "class.destroy_the_monument.tank.description": "Can take many hits, but deals less damage",
   "class.destroy_the_monument.constructor": "Constructor",
   "class.destroy_the_monument.constructor.description": "Knows how do build and destroy...",
   "class.destroy_the_monument.berserker": "Berserker",

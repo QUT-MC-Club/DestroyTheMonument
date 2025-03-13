@@ -41,8 +41,8 @@
     "destroy_the_monument:archer",
     "destroy_the_monument:berserker",
     "destroy_the_monument:sentinel",
-    "destroy_the_monument:tank",
-    "destroy_the_monument:smasher"
+    "destroy_the_monument:smasher",
+    "destroy_the_monument:tank"
   ],
 
   "monument_renames": {

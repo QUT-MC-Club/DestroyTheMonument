@@ -30,7 +30,7 @@
   ],
   "restockable_items": [
     {
-      "item": "cooked_beef",
+      "item": "cooked_chicken",
       "restock_time": 800,
       "max_count": 6,
       "start_count": 4

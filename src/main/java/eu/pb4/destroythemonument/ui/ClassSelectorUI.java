@@ -44,15 +44,15 @@ public class ClassSelectorUI extends SimpleGui {
     }
 
     private static ScreenHandlerType<?> getType(int size) {
-        if (size <= 8) {
+        if (size <= 9) {
             return ScreenHandlerType.GENERIC_9X1;
-        } else if (size <= 17) {
+        } else if (size <= 18) {
             return ScreenHandlerType.GENERIC_9X2;
-        } else if (size <= 26) {
+        } else if (size <= 27) {
             return ScreenHandlerType.GENERIC_9X3;
-        } else if (size <= 35) {
+        } else if (size <= 36) {
             return ScreenHandlerType.GENERIC_9X4;
-        } else if (size <= 44) {
+        } else if (size <= 45) {
             return ScreenHandlerType.GENERIC_9X5;
         } else {
             return ScreenHandlerType.GENERIC_9X6;

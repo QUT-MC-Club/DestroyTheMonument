@@ -5,10 +5,11 @@
   "attributes": {
     "max_health": 20,
     "movement_speed": 0.13,
-    "armor": 6
+    "armor": 7,
+    "knockback_resistance": 0.1
   },
   "armor": [
-    "iron_helmet",
+    "netherite_helmet",
     "leather_chestplate",
     "air",
     "leather_boots"
