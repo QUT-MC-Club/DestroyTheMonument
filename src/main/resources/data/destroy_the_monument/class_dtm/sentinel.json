@@ -1,47 +1,45 @@
 {
-  "class_name": "sentry",
-  "icon": "crossbow",
+  "class_name": "sentinel",
+  "icon": "shield",
   "attributes": {
-    "max_health": 20,
-    "armor": 8,
-    "movement_speed": 0.11
+    "max_health": 24,
+    "movement_speed": 0.105,
+    "armor": 12
   },
+  "pickaxe_tool": "diamond_pickaxe",
+  "axe_tool": "iron_axe",
   "armor": [
     "iron_helmet",
     "iron_chestplate",
     "leather_leggings",
-    "leather_boots"
+    "iron_boots"
   ],
   "items": [
     "destroy_the_monument:mining_tool",
     {
-      "id": "crossbow",
+      "id": "minecraft:shield",
       "count": 1,
       "components": {
-        "enchantments": {
-          "multishot": 1
+        "minecraft:enchantments": {
+          "levels": {
+            "sharpness": 4
+          }
         }
       }
     }
   ],
   "restockable_items": [
     {
-      "item": "cooked_chicken",
+      "item": "cooked_beef",
       "restock_time": 800,
-      "max_count": 5,
-      "start_count": 3
+      "max_count": 6,
+      "start_count": 4
     },
     {
       "item": "destroy_the_monument:multi_block",
       "restock_time": 60,
       "max_count": 32,
       "start_count": 24
-    },
-    {
-      "item": "arrow",
-      "restock_time": 200,
-      "max_count": 10,
-      "start_count": 5
     }
   ]
 }

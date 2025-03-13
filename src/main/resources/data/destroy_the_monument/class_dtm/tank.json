@@ -1,24 +1,24 @@
 {
   "class_name": "tank",
-  "icon": "diamond_chestplate",
+  "icon": "netherite_chestplate",
   "attributes": {
     "max_health": 24,
     "movement_speed": 0.105,
-    "knockback_resistance": 0.12,
-    "armor": 14
+    "knockback_resistance": 0.2,
+    "armor": 16
   },
   "pickaxe_tool": "diamond_pickaxe",
   "axe_tool": "iron_axe",
   "armor": [
-    "iron_helmet",
-    "diamond_chestplate",
-    "leather_leggings",
+    "leather_helmet",
+    "netherite_chestplate",
+    "iron_leggings",
     "netherite_boots"
   ],
   "items": [
     "destroy_the_monument:mining_tool",
     {
-      "id": "iron_sword",
+      "id": "stone_sword",
       "Count": 1
     }
   ],

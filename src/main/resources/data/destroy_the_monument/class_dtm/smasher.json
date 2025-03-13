@@ -1,15 +1,15 @@
 {
-  "class_name": "bludgeon",
+  "class_name": "smasher",
   "icon": "mace",
   "attributes": {
-    "max_health": 20,
+    "max_health": 24,
     "movement_speed": 0.105,
     "armor": 10
   },
   "armor": [
-    "chainmail_helmet",
-    "leather_chestplate",
-    "chainmail_leggings",
+    "leather_helmet",
+    "chainmail_chestplate",
+    "leather_leggings",
     "chainmail_boots"
   ],
   "items": [

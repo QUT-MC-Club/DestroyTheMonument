@@ -5,7 +5,7 @@
   "attributes": {
     "max_health": 20,
     "movement_speed": 0.13,
-    "armor": 3
+    "armor": 6
   },
   "armor": [
     "iron_helmet",

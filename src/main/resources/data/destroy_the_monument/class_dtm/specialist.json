@@ -1,26 +1,26 @@
 {
-  "class_name": "arsonist",
-  "icon": "fire_charge",
+  "class_name": "specialist",
+  "icon": "crossbow",
   "attributes": {
-    "max_health": 18,
-    "armor": 9,
-    "movement_speed": 0.13
+    "max_health": 20,
+    "armor": 10,
+    "movement_speed": 0.11
   },
   "armor": [
-    "golden_helmet",
-    "leather_chestplate",
-    "golden_leggings",
-    "golden_boots"
+    "leather_helmet",
+    "iron_chestplate",
+    "leather_leggings",
+    "leather_boots"
   ],
   "items": [
     "destroy_the_monument:mining_tool",
     {
-      "id": "golden_sword",
+      "id": "crossbow",
       "count": 1,
       "components": {
         "enchantments": {
-          "fire_aspect": 2,
-          "sharpness": 3
+          "multishot": 1,
+          "piercing": 2
         }
       }
     }
@@ -39,7 +39,7 @@
       "start_count": 24
     },
     {
-      "item": "fire_charge",
+      "item": "arrow",
       "restock_time": 200,
       "max_count": 10,
       "start_count": 5
