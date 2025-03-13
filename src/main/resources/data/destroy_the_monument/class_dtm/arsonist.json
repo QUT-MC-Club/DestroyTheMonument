@@ -2,15 +2,32 @@
   "class_name": "arsonist",
   "icon": "fire_charge",
   "attributes": {
-    "max_health": 10,
-    "armor": 0,
+    "max_health": 20,
+    "armor": 11,
     "movement_speed": 0.11
   },
   "armor": [
-    "oak_leaves",
+    "leather_helmet",
     "leather_chestplate",
-    "leather_leggings",
-    "leather_boots"
+    "iron_leggings",
+    {
+      "id": "iron_leggings",
+      "count": 1,
+      "components": {
+        "enchantments": {
+          "fire_protection": 4
+        }
+      }
+    },
+    {
+      "id": "iron_boots",
+      "count": 1,
+      "components": {
+        "enchantments": {
+          "fire_protection": 4
+        }
+      }
+    }
   ],
   "items": [
     "destroy_the_monument:mining_tool",
