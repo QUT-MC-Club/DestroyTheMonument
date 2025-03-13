@@ -15,7 +15,7 @@
   "items": [
     "destroy_the_monument:mining_tool",
     {
-      "id": "gold_sword",
+      "id": "golden_sword",
       "count": 1,
       "components": {
         "enchantments": {

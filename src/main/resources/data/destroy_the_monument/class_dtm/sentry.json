@@ -14,13 +14,12 @@
   ],
   "items": [
     "destroy_the_monument:mining_tool",
-    "stone_sword",
     {
       "id": "crossbow",
       "count": 1,
       "components": {
         "enchantments": {
-          "piercing": 2
+          "multishot": 1
         }
       }
     }

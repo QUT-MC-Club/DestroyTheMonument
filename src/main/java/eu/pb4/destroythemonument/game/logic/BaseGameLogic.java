@@ -34,6 +34,7 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerAbilities;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.PersistentProjectileEntity;
+import net.minecraft.entity.projectile.WindChargeEntity;
 import net.minecraft.item.ArrowItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
@@ -220,6 +221,11 @@ public abstract class BaseGameLogic {
     }
 
     protected EventResult onExplosion(Explosion explosion, List<BlockPos> destroyedBlocks) {
+        var causingEntity = explosion.getEntity();
+        if (causingEntity instanceof WindChargeEntity) {
+            // Return early if it is a Wind Charge entity, so no further explosion handling is applied
+            return EventResult.PASS;
+        }
         for (BlockPos blockPos : destroyedBlocks) {
             if (!this.gameMap.isUnbreakable(blockPos) && !this.gameMap.isActiveMonument(blockPos)) {
                 var state = this.gameMap.world.getBlockState(blockPos);
