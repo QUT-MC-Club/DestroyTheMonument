@@ -22,7 +22,7 @@ import java.util.Map;
 
 public class MultiBlockItem extends BlockItem implements PolymerItem {
     public MultiBlockItem(Settings settings) {
-        super(Blocks.BIRCH_PLANKS, settings);
+        super(Blocks.STONE, settings);
     }
 
     @Override
@@ -51,7 +51,7 @@ public class MultiBlockItem extends BlockItem implements PolymerItem {
 
     @Override
     public Item getPolymerItem(ItemStack itemStack, PacketContext context) {
-        return Items.BIRCH_PLANKS;
+        return Items.STONE;
     }
 
     @Override
@@ -61,7 +61,7 @@ public class MultiBlockItem extends BlockItem implements PolymerItem {
             return PolymerItem.super.getPolymerItemStack(itemStack, type, context);
         }
 
-        Item item = Items.BIRCH_PLANKS;
+        Item item = Items.STONE;
         GameSpace gameSpace = GameSpaceManager.get().byPlayer(player);
         if (gameSpace != null) {
             BaseGameLogic logic = gameSpace.getAttachment(DTM.GAME_LOGIC);
