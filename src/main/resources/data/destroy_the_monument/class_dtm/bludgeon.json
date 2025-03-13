@@ -1,0 +1,39 @@
+{
+  "class_name": "bludgeon",
+  "icon": "mace",
+  "attributes": {
+    "max_health": 20,
+    "movement_speed": 0.105,
+    "armor": 12
+  },
+  "armor": [
+    "chainmail_helmet",
+    "iron_chestplate",
+    "leather_leggings",
+    "iron_boots"
+  ],
+  "items": [
+    "destroy_the_monument:mining_tool",
+    "mace"
+  ],
+  "restockable_items": [
+    {
+      "item": "cooked_cod",
+      "restock_time": 800,
+      "max_count": 5,
+      "start_count": 3
+    },
+    {
+      "item": "destroy_the_monument:multi_block",
+      "restock_time": 65,
+      "max_count": 32,
+      "start_count": 24
+    },
+    {
+      "item": "wind_charge",
+      "restock_time": 400,
+      "max_count": 5,
+      "start_count": 1
+    }
+  ]
+}

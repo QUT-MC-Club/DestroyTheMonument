@@ -16,6 +16,8 @@
   "class.destroy_the_monument.barrier.description": "The Wall",
   "class.destroy_the_monument.arsonist": "Arsonist",
   "class.destroy_the_monument.arsonist.description": "Some want to watch the world burn",
+  "class.destroy_the_monument.bludgeon": "Bludgeon",
+  "class.destroy_the_monument.bludgeon.description": "Watch for the sky",
 
   "item.destroy_the_monument.class_selector": "Select class",
   "item.destroy_the_monument.multi_block": "Multi Block",

@@ -10,24 +10,7 @@
     "leather_helmet",
     "leather_chestplate",
     "iron_leggings",
-    {
-      "id": "iron_leggings",
-      "count": 1,
-      "components": {
-        "enchantments": {
-          "fire_protection": 4
-        }
-      }
-    },
-    {
-      "id": "iron_boots",
-      "count": 1,
-      "components": {
-        "enchantments": {
-          "fire_protection": 4
-        }
-      }
-    }
+    "iron_boots"
   ],
   "items": [
     "destroy_the_monument:mining_tool",
@@ -43,7 +26,7 @@
   ],
   "restockable_items": [
     {
-      "item": "cooked_cod",
+      "item": "cooked_chicken",
       "restock_time": 800,
       "max_count": 5,
       "start_count": 3
@@ -56,9 +39,9 @@
     },
     {
       "item": "fire_charge",
-      "restock_time": 400,
-      "max_count": 5,
-      "start_count": 1
+      "restock_time": 200,
+      "max_count": 10,
+      "start_count": 5
     }
   ]
 }
