@@ -41,7 +41,7 @@
     "destroy_the_monument:berserker",
     "destroy_the_monument:sentry",
     "destroy_the_monument:barrier",
-    "destroy_the_monument:sniper"
+    "destroy_the_monument:arsonist"
   ],
 
   "monument_renames": {

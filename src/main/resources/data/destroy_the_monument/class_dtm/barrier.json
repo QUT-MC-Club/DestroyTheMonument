@@ -5,8 +5,7 @@
     "max_health": 24,
     "movement_speed": 0.105,
     "knockback_resistance": 0.12,
-    "armor": 14,
-    "attack_damage ": 4
+    "armor": 14
   },
   "pickaxe_tool": "diamond_pickaxe",
   "axe_tool": "iron_axe",
@@ -19,10 +18,14 @@
   "items": [
     "destroy_the_monument:mining_tool",
     {
-      "id": "shield",
-      "Count": 1,
-      "enchantments": {
-        "sharpness": 2
+      "id": "minecraft:shield",
+      "count": 1,
+      "components": {
+        "minecraft:enchantments": {
+          "levels": {
+            "sharpness": 2
+          }
+        }
       }
     }
   ],

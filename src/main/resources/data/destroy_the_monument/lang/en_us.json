@@ -14,8 +14,8 @@
   "class.destroy_the_monument.sentry.description": "Deals with crowds at a range, not close",
   "class.destroy_the_monument.barrier": "Barrier",
   "class.destroy_the_monument.barrier.description": "The Wall",
-  "class.destroy_the_monument.sniper": "Sniper",
-  "class.destroy_the_monument.sniper.description": "Snipin's a good job, mate!",
+  "class.destroy_the_monument.arsonist": "Arsonist",
+  "class.destroy_the_monument.arsonist.description": "Some want to watch the world burn",
 
   "item.destroy_the_monument.class_selector": "Select class",
   "item.destroy_the_monument.multi_block": "Multi Block",
