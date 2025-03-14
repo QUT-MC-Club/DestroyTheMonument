@@ -89,6 +89,8 @@ public record PlayerClass(
                 ItemStack stack = ri.itemStack.copy();
                 player.getInventory().insertStack(stack);
                 playerData.restockTimers.put(ri, 0);
+            } else if (player.getInventory().count(ri.itemStack.getItem()) >= ri.maxCount) {
+                playerData.restockTimers.put(ri, 0);
             }
         }
     }
