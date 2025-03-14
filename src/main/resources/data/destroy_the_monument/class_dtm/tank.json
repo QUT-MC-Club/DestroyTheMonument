@@ -18,7 +18,7 @@
   "items": [
     "destroy_the_monument:mining_tool",
     {
-      "id": "minecraft:wooden_axe",
+      "id": "minecraft:golden_axe",
       "count": 1,
       "components": {
         "minecraft:enchantments": {
