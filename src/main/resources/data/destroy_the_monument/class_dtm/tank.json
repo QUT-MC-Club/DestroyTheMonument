@@ -4,26 +4,26 @@
   "attributes": {
     "max_health": 24,
     "movement_speed": 0.105,
-    "knockback_resistance": 0.3,
-    "armor": 18
+    "knockback_resistance": 0.2,
+    "armor": 14
   },
   "pickaxe_tool": "diamond_pickaxe",
   "axe_tool": "iron_axe",
   "armor": [
     "leather_helmet",
     "netherite_chestplate",
-    "netherite_leggings",
+    "leather_leggings",
     "netherite_boots"
   ],
   "items": [
     "destroy_the_monument:mining_tool",
     {
-      "id": "minecraft:golden_axe",
+      "id": "minecraft:shield",
       "count": 1,
       "components": {
         "minecraft:enchantments": {
           "levels": {
-            "knockback": 1
+            "sharpness": 4
           }
         }
       }

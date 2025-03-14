@@ -16,7 +16,17 @@
   ],
   "items": [
     "destroy_the_monument:mining_tool",
-    "iron_axe"
+    {
+      "id": "minecraft:iron_axe",
+      "count": 1,
+      "components": {
+        "minecraft:enchantments": {
+          "levels": {
+            "knockback": 1
+          }
+        }
+      }
+    }
   ],
   "restockable_items": [
     {
