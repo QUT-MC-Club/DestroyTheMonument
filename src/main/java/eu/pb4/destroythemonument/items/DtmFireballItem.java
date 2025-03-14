@@ -105,7 +105,7 @@ public class DtmFireballItem extends Item implements PolymerItem {
         ItemStack stackInHand = user.getStackInHand(user.getActiveHand());
         Random random = world.getRandom();
 
-        user.getItemCooldownManager().set(stackInHand, 3);
+        user.getItemCooldownManager().set(stackInHand, 5);
 
         SmallFireballEntity fireballEntity = new SmallFireballEntity(world, user, new Vec3d(0,0,0));
         fireballEntity.setPosition(user.getEyePos());

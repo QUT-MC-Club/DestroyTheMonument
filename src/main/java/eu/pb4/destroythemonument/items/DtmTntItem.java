@@ -7,6 +7,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.item.Items;
+import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.Identifier;
@@ -17,6 +18,11 @@ import xyz.nucleoid.packettweaker.PacketContext;
 public class DtmTntItem extends Item implements PolymerItem {
     public DtmTntItem(Settings settings) {
         super(settings);
+    }
+
+    @Override
+    public Text getName(ItemStack stack) {
+        return Text.literal("Throwing TNT");
     }
 
     @Override
