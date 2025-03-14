@@ -1,5 +1,5 @@
 {
-  "class_name": "Alchemist",
+  "class_name": "alchemist",
   "icon": "brewing_stand",
   "attributes": {
     "max_health": 20,

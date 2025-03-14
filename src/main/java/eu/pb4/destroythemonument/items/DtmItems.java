@@ -51,6 +51,7 @@ public class DtmItems {
                         ), 1.0F, 1)
                 ), Items.IRON_PICKAXE);
     });
+    public static final Item FIREBALL = register("fireball", DtmFireballItem::new);
 
     public static void registerItems() {
 
