@@ -45,21 +45,7 @@
     },
     {
       "item": {
-        "id": "minecraft:potion",
-        "count": 1,
-        "components": {
-          "minecraft:potion_contents": {
-            "potion": "strong_slowness"
-          }
-        }
-      },
-      "restock_time": 200,
-      "max_count": 1,
-      "start_offset": 100
-    },
-    {
-      "item": {
-        "id": "minecraft:potion",
+        "id": "minecraft:splash_potion",
         "count": 1,
         "components": {
           "minecraft:potion_contents": {
@@ -73,7 +59,7 @@
     },
     {
       "item": {
-        "id": "minecraft:potion",
+        "id": "minecraft:splash_potion",
         "count": 1,
         "components": {
           "minecraft:potion_contents": {
