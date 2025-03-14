@@ -34,13 +34,13 @@
   ],
   "kits": [
     "destroy_the_monument:warrior",
-    "destroy_the_monument:specialist",
+    "destroy_the_monument:alchemist",
     "destroy_the_monument:constructor",
     "destroy_the_monument:arsonist",
     "destroy_the_monument:archer",
     "destroy_the_monument:berserker",
     "destroy_the_monument:smasher",
-    "destroy_the_monument:aquaris",
+    "destroy_the_monument:specialist",
     "destroy_the_monument:tank"
   ],
 

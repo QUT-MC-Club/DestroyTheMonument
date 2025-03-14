@@ -2,13 +2,13 @@
   "class_name": "specialist",
   "icon": "crossbow",
   "attributes": {
-    "max_health": 20,
-    "armor": 12,
-    "movement_speed": 0.11
+    "max_health": 24,
+    "armor": 10,
+    "movement_speed": 0.105
   },
   "armor": [
     "leather_helmet",
-    "diamond_chestplate",
+    "iron_chestplate",
     "leather_leggings",
     "leather_boots"
   ],
@@ -20,7 +20,7 @@
       "components": {
         "enchantments": {
           "multishot": 1,
-          "piercing": 2
+          "piercing": 1
         }
       }
     }

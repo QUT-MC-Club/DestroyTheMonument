@@ -9,8 +9,8 @@
   "armor": [
     "chainmail_helmet",
     "leather_chestplate",
-    "leather_leggings",
-    "leather_boots"
+    "air",
+    "iron_boots"
   ],
   "items": [
     "destroy_the_monument:mining_tool",

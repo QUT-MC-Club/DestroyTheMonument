@@ -3,7 +3,7 @@
   "icon": "diamond_sword",
   "attributes": {
     "max_health": 20,
-    "armor": 10,
+    "armor": 11,
     "movement_speed": 0.11
   },
   "armor": [
