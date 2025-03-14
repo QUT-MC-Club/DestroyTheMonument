@@ -14,7 +14,17 @@
   ],
   "items": [
     "destroy_the_monument:mining_tool",
-    "golden_axe"
+    {
+      "id": "minecraft:stick",
+      "count": 1,
+      "components": {
+        "minecraft:enchantments": {
+          "levels": {
+            "sharpness": 4
+          }
+        }
+      }
+    }
   ],
   "restockable_items": [
     {
@@ -35,27 +45,13 @@
         "count": 1,
         "components": {
           "minecraft:potion_contents": {
-            "potion": "strong_poison"
-          }
-        }
-      },
-      "restock_time": 400,
-      "max_count": 1,
-      "start_offset": 100
-    },
-    {
-      "item": {
-        "id": "minecraft:splash_potion",
-        "count": 1,
-        "components": {
-          "minecraft:potion_contents": {
             "potion": "strong_regeneration"
           }
         }
       },
       "restock_time": 400,
       "max_count": 1,
-      "start_offset": 100
+      "start_count": 1
     },
     {
       "item": {
@@ -63,25 +59,25 @@
         "count": 1,
         "components": {
           "minecraft:potion_contents": {
-            "potion": "strong_swiftness"
+            "potion": "strong_healing"
           }
         }
       },
       "restock_time": 200,
       "max_count": 1,
-      "start_offset": 100
+      "start_count": 1
     },
     {
       "item": {
-        "id": "minecraft:splash_potion",
+        "id": "minecraft:lingering_potion",
         "count": 1,
         "components": {
           "minecraft:potion_contents": {
-            "potion": "water"
+            "potion": "harming"
           }
         }
       },
-      "restock_time": 100,
+      "restock_time": 200,
       "max_count": 1,
       "start_count": 1
     }
