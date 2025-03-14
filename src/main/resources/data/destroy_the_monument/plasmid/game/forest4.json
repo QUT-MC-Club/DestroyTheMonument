@@ -26,7 +26,7 @@
   },
   "allowJoiningInGame": true,
   "gameTime": 24000,
-  "tickRespawnTime": 40,
+  "tickRespawnTime": 100,
   "teams": [
     {"key": "oak", "name": "Oak", "color": "blue"},
     {"key": "acacia", "name": "Acacia", "color": "red"},

@@ -27,7 +27,7 @@ public record GameConfig(String gamemode, WaitingLobbyConfig players,
             Codec.BOOL.optionalFieldOf("allowJoiningInGame", false).forGetter(GameConfig::allowJoiningInGame),
             Codec.INT.optionalFieldOf("gameTime", -1).forGetter(GameConfig::gameTime),
             Codec.list(Identifier.CODEC).fieldOf("kits").forGetter(GameConfig::kits),
-            Codec.INT.optionalFieldOf("tickRespawnTime", 60).forGetter(GameConfig::tickRespawnTime),
+            Codec.INT.optionalFieldOf("tickRespawnTime", 100).forGetter(GameConfig::tickRespawnTime),
             Codec.unboundedMap(Codec.STRING, Codec.STRING).optionalFieldOf("monument_renames").forGetter(GameConfig::monumentRemaps)
             ).apply(instance, GameConfig::new));
 }
