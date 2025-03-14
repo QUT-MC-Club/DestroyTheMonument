@@ -14,17 +14,7 @@
   ],
   "items": [
     "destroy_the_monument:mining_tool",
-    {
-      "id": "minecraft:stick",
-      "count": 1,
-      "components": {
-        "minecraft:enchantments": {
-          "levels": {
-            "sharpness": 4
-          }
-        }
-      }
-    }
+    "iron_sword"
   ],
   "restockable_items": [
     {
