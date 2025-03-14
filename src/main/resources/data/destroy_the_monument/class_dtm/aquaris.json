@@ -38,33 +38,29 @@
       "start_count": 24
     },
     {
-      "item": [
-        {
-          "id": "minecraft:splash_potion",
-          "count": 1,
-          "components": {
-            "minecraft:potion_contents": {
-              "potion": "water"
-            }
+      "item": {
+        "id": "minecraft:splash_potion",
+        "count": 1,
+        "components": {
+          "minecraft:potion_contents": {
+            "potion": "water"
           }
         }
-      ],
+      },
       "restock_time": 60,
       "max_count": 1,
       "start_count": 1
     },
     {
-      "item": [
-        {
-          "id": "minecraft:potion",
-          "count": 1,
-          "components": {
-            "minecraft:potion_contents": {
-              "potion": "turtle_master"
-            }
+      "item": {
+        "id": "minecraft:potion",
+        "count": 1,
+        "components": {
+          "minecraft:potion_contents": {
+            "potion": "turtle_master"
           }
         }
-      ],
+      },
       "restock_time": 800,
       "max_count": 1,
       "start_offset": 100
