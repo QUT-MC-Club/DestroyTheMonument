@@ -12,7 +12,7 @@
     "iron_helmet",
     "iron_chestplate",
     "leather_leggings",
-    "iron_boots"
+    "leather_boots"
   ],
   "items": [
     "destroy_the_monument:mining_tool",
@@ -22,7 +22,7 @@
       "components": {
         "minecraft:enchantments": {
           "levels": {
-            "sharpness": 4
+            "sharpness": 5
           }
         }
       }

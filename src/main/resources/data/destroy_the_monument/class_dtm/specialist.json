@@ -3,12 +3,12 @@
   "icon": "crossbow",
   "attributes": {
     "max_health": 20,
-    "armor": 10,
+    "armor": 12,
     "movement_speed": 0.11
   },
   "armor": [
     "leather_helmet",
-    "iron_chestplate",
+    "diamond_chestplate",
     "leather_leggings",
     "leather_boots"
   ],
