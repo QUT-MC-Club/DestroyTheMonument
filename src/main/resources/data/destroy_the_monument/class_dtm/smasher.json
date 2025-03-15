@@ -19,9 +19,9 @@
   "restockable_items": [
     {
       "item": "wind_charge",
-      "restock_time": 400,
-      "max_count": 2,
-      "start_offset": 100
+      "restock_time": 200,
+      "max_count": 3,
+      "start_count": 1
     },
     {
       "item": "cooked_chicken",

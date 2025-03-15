@@ -90,7 +90,7 @@ public class DtmTridentItem extends TridentItem implements PolymerItem {
                             if (playerEntity.isInCreativeMode()) {
                                 tridentEntity.pickupType = PersistentProjectileEntity.PickupPermission.CREATIVE_ONLY;
                             } else {
-                                ((PlayerEntity) user).getItemCooldownManager().set(stackInHand, 80);
+                                ((PlayerEntity) user).getItemCooldownManager().set(stackInHand, 60);
                             }
 
                             lastThrownTridentUUID.put(playerEntity, tridentEntity.getUuid());

@@ -23,7 +23,15 @@
         }
       }
     },
-    "bow"
+    {
+      "id": "bow",
+      "count": 1,
+      "components": {
+        "enchantments": {
+          "punch": 1
+        }
+      }
+    }
   ],
   "restockable_items": [
     {
@@ -40,7 +48,7 @@
     },
     {
       "item": "spectral_arrow",
-      "restock_time": 200,
+      "restock_time": 100,
       "max_count": 10,
       "start_count": 5
     }

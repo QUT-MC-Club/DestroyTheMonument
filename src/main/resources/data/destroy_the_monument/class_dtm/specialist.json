@@ -40,7 +40,7 @@
     },
     {
       "item": "arrow",
-      "restock_time": 200,
+      "restock_time": 100,
       "max_count": 10,
       "start_count": 5
     }
