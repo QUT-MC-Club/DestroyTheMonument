@@ -19,8 +19,8 @@
       "count": 1,
       "components": {
         "enchantments": {
-          "fire_aspect": 2,
-          "sharpness": 2
+          "fire_aspect": 1,
+          "sharpness": 1
         }
       }
     }
@@ -39,12 +39,9 @@
       "start_count": 24
     },
     {
-      "item": {
-        "id": "destroy_the_monument:fireball",
-        "count": 3
-      },
-      "restock_time": 160,
-      "max_count": 1,
+      "item": "destroy_the_monument:fireball",
+      "restock_time": 60,
+      "max_count": 3,
       "start_count": 3
     }
   ]
