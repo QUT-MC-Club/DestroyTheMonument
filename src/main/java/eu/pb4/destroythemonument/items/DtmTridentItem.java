@@ -90,7 +90,6 @@ public class DtmTridentItem extends TridentItem implements PolymerItem {
                             if (playerEntity.isInCreativeMode()) {
                                 tridentEntity.pickupType = PersistentProjectileEntity.PickupPermission.CREATIVE_ONLY;
                             } else {
-                                tridentEntity.pickupType = PersistentProjectileEntity.PickupPermission.DISALLOWED;
                                 ((PlayerEntity) user).getItemCooldownManager().set(stackInHand, 80);
                             }
 
@@ -140,12 +139,5 @@ public class DtmTridentItem extends TridentItem implements PolymerItem {
                 tridentEntity.discard();
             }
         }
-    }
-
-    @Override
-    public ProjectileEntity createEntity(World world, Position pos, ItemStack stack, Direction direction) {
-        TridentEntity tridentEntity = new TridentEntity(world, pos.getX(), pos.getY(), pos.getZ(), stack.copyWithCount(1));
-        tridentEntity.pickupType = PersistentProjectileEntity.PickupPermission.DISALLOWED;
-        return tridentEntity;
     }
 }

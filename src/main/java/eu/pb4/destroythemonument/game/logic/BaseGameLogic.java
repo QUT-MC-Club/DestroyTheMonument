@@ -34,6 +34,7 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerAbilities;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.PersistentProjectileEntity;
+import net.minecraft.entity.projectile.ProjectileEntity;
 import net.minecraft.entity.projectile.WindChargeEntity;
 import net.minecraft.item.ArrowItem;
 import net.minecraft.item.ItemStack;
@@ -51,6 +52,7 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.*;
 import net.minecraft.util.hit.BlockHitResult;
+import net.minecraft.util.hit.EntityHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.ColorHelper;
 import net.minecraft.util.math.Direction;
@@ -83,6 +85,7 @@ import xyz.nucleoid.stimuli.event.player.PlayerDamageEvent;
 import xyz.nucleoid.stimuli.event.player.PlayerDeathEvent;
 import xyz.nucleoid.stimuli.event.player.PlayerS2CPacketEvent;
 import xyz.nucleoid.stimuli.event.projectile.ArrowFireEvent;
+import xyz.nucleoid.stimuli.event.projectile.ProjectileHitEvent;
 import xyz.nucleoid.stimuli.event.world.ExplosionDetonatedEvent;
 
 import java.util.ArrayList;
@@ -154,6 +157,7 @@ public abstract class BaseGameLogic {
         game.setRule(GameRuleType.INTERACTION, EventResult.PASS);
         game.setRule(GameRuleType.BLOCK_DROPS, EventResult.DENY);
         game.setRule(GameRuleType.MODIFY_ARMOR, EventResult.DENY);
+        game.setRule(GameRuleType.SWAP_OFFHAND, EventResult.DENY);
 
         game.listen(GameActivityEvents.CREATE, this::onOpen);
         game.listen(GameActivityEvents.DESTROY, this::onClose);
@@ -176,6 +180,7 @@ public abstract class BaseGameLogic {
         game.listen(PlayerDeathEvent.EVENT, this::onPlayerDeath);
         game.listen(ExplosionDetonatedEvent.EVENT, this::onExplosion);
         game.listen(ArrowFireEvent.EVENT, this::onArrowShoot);
+        game.listen(ProjectileHitEvent.BLOCK, this::onProjectileHit);
         game.listen(ItemThrowEvent.EVENT, this::onPlayerDropItem);
 
         game.listen(PlayerS2CPacketEvent.EVENT, this::onServerPacket);
@@ -190,6 +195,13 @@ public abstract class BaseGameLogic {
         }
 
         TeamChat.addTo(game, this.teams.getManager());
+    }
+
+    private EventResult onProjectileHit(ProjectileEntity projectileEntity, BlockHitResult blockHitResult) {
+        if (projectileEntity instanceof PersistentProjectileEntity persistentProjectile) {
+            persistentProjectile.pickupType = PersistentProjectileEntity.PickupPermission.DISALLOWED;
+        }
+        return EventResult.PASS;
     }
 
     protected EventResult onBlockPunch(ServerPlayerEntity player, Direction direction, BlockPos blockPos) {
@@ -223,7 +235,6 @@ public abstract class BaseGameLogic {
     protected EventResult onExplosion(Explosion explosion, List<BlockPos> destroyedBlocks) {
         var causingEntity = explosion.getEntity();
         if (causingEntity instanceof WindChargeEntity) {
-            // Return early if it is a Wind Charge entity, so no further explosion handling is applied
             return EventResult.PASS;
         }
         for (BlockPos blockPos : destroyedBlocks) {
