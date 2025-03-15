@@ -158,7 +158,6 @@ public abstract class BaseGameLogic {
         game.setRule(GameRuleType.BLOCK_DROPS, EventResult.DENY);
         game.setRule(GameRuleType.MODIFY_ARMOR, EventResult.DENY);
         game.setRule(GameRuleType.SWAP_OFFHAND, EventResult.DENY);
-        game.setRule(GameRuleType.MODIFY_INVENTORY, EventResult.DENY);
 
         game.listen(GameActivityEvents.CREATE, this::onOpen);
         game.listen(GameActivityEvents.DESTROY, this::onClose);
