@@ -141,4 +141,11 @@ public class DtmTridentItem extends TridentItem implements PolymerItem {
             }
         }
     }
+
+    @Override
+    public ProjectileEntity createEntity(World world, Position pos, ItemStack stack, Direction direction) {
+        TridentEntity tridentEntity = new TridentEntity(world, pos.getX(), pos.getY(), pos.getZ(), stack.copyWithCount(1));
+        tridentEntity.pickupType = PersistentProjectileEntity.PickupPermission.DISALLOWED;
+        return tridentEntity;
+    }
 }
