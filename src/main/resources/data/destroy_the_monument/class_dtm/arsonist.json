@@ -42,7 +42,7 @@
       "item": "destroy_the_monument:fireball",
       "restock_time": 60,
       "max_count": 3,
-      "start_count": 3
+      "start_count": 1
     }
   ]
 }
